@@ -1,0 +1,127 @@
+/* styles.css */
+
+/* Reset básico */
+body,
+h1,
+h2,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f8fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Encabezado */
+header {
+  background-color: #1da1f2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+/* Contenedor principal */
+main {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+/* Formulario */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form textarea,
+form button {
+  margin-bottom: 15px;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  border-color: #1da1f2;
+  box-shadow: 0 0 5px rgba(29, 161, 242, 0.5);
+}
+
+form button {
+  background-color: #1da1f2;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0d8dde;
+}
+
+button[type="button"] {
+  background-color: #bbb;
+}
+
+button[type="button"]:hover {
+  background-color: #999;
+}
+
+/* Sección de usuarios */
+#users-list {
+  margin-top: 20px;
+}
+
+#users-list .user-card {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#users-list .user-card h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+#users-list .user-card button {
+  margin-left: 10px;
+}
